@@ -5,9 +5,7 @@ async function getAllService(req, res, next) {
     const { keyword = "", page = 1, category, priceRange } = req.query;
     const limit = 9;
     const skip = (page - 1) * limit;
-    const query = {
-      status: "active",
-    };
+    const query = {};
     if (keyword.trim()) {
       query.title = { $regex: keyword, $options: "i" };
     }
@@ -19,7 +17,8 @@ async function getAllService(req, res, next) {
       query.price = { $gte: min, $lte: max };
     }
     const total = await Services.countDocuments(query);
-    const services = await Services.find(query).populate("inclusions")
+    const services = await Services.find(query)
+      .populate("inclusions")
       .sort({ isFeatured: -1 })
       .skip(skip)
       .limit(limit);
@@ -158,9 +157,11 @@ async function editService(req, res, next) {
       imageUrl = req.files.map((file) => file.path);
     }
     let inclusionArray = service.inclusions;
+    console.log(inclusions);
     if (inclusions) {
       try {
         const parsed = JSON.parse(inclusions);
+
         if (!Array.isArray(parsed)) {
           return res
             .status(400)
@@ -216,5 +217,6 @@ module.exports = {
   getAllService,
   getOneService,
   addService,
-  editService,changeStatus
+  editService,
+  changeStatus,
 };

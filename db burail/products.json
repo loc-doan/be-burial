@@ -1,0 +1,149 @@
+[{
+  "_id": {
+    "$oid": "6874a38fa85afa9ac6142512"
+  },
+  "name": "Tiểu Quách Đá Cẩm Thạch",
+  "slug": "tieu-quach-da-cam-thach",
+  "price": 2900,
+  "image": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752484903/products/janhyqvcvv3nzrloe1bx.png"
+  ],
+  "description": "Tiểu quách làm từ đá cẩm thạch tự nhiên, bền đẹp theo thời gian.",
+  "category": "Tiểu quách",
+  "status": "active",
+  "quantity": 10,
+  "isFeatured": false
+},
+{
+  "_id": {
+    "$oid": "6874a38fa85afa9ac6142513"
+  },
+  "name": "Hũ Tro Cốt Sứ Trắng Hoa Văn",
+  "slug": "hu-tro-cot-su-trang-hoa-van",
+  "price": 1500,
+  "image": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752484903/products/janhyqvcvv3nzrloe1bx.png"
+  ],
+  "description": "Hũ tro cốt bằng sứ trắng, hoa văn truyền thống, dùng đựng tro cốt sau hỏa táng.",
+  "category": "Hũ tro cốt",
+  "status": "active",
+  "quantity": 10,
+  "isFeatured": false
+},
+{
+  "_id": {
+    "$oid": "6874a588a85afa9ac6142524"
+  },
+  "name": "Áo Quan Gỗ Gõ Đỏ Cao Cấp",
+  "slug": "ao-quan-go-go-do-cao-cap",
+  "price": 9600,
+  "image": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752484903/products/janhyqvcvv3nzrloe1bx.png"
+  ],
+  "description": "Áo quan làm từ gỗ gõ đỏ tự nhiên, chạm khắc thủ công, phù hợp cho nghi lễ an táng truyền thống.",
+  "category": "Áo quan",
+  "status": "active",
+  "quantity": 100,
+  "isFeatured": false
+},
+{
+  "_id": {
+    "$oid": "6874c8da63bd7443e3289e9f"
+  },
+  "name": "áo quan test",
+  "slug": "ao-quan-test",
+  "price": 1000,
+  "quantity": 1000,
+  "image": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752484903/products/janhyqvcvv3nzrloe1bx.png"
+  ],
+  "description": "Áo khoác tang lễ",
+  "category": "Áo quan",
+  "status": "active",
+  "isFeatured": false,
+  "created_at": {
+    "$date": "2025-07-14T09:07:38.330Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-14T09:21:45.219Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6874cf670dd860b78bddf21a"
+  },
+  "name": "áo quan test 23",
+  "slug": "ao-quan-test-23",
+  "price": 100,
+  "quantity": 100,
+  "image": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485787/products/tvtqiqbcgjtypojfhten.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485788/products/snleajrytuqvttpepvcp.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485787/products/h6xc5dpknfnooshrjw2c.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485789/products/us7huqoxkrvkodwdigfq.png"
+  ],
+  "description": "abcde",
+  "category": "Áo quan",
+  "status": "active",
+  "isFeatured": true,
+  "created_at": {
+    "$date": "2025-07-14T09:35:35.379Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-14T09:38:01.401Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6882027508af0b03b949166c"
+  },
+  "name": "Quan tài An Táng Gỗ Cẩm Lai",
+  "slug": "quan-tai-an-tang-go-cam-lai",
+  "price": 100,
+  "quantity": 100,
+  "image": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485787/products/tvtqiqbcgjtypojfhten.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485788/products/snleajrytuqvttpepvcp.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485787/products/h6xc5dpknfnooshrjw2c.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485789/products/us7huqoxkrvkodwdigfq.png"
+  ],
+  "description": "Quan tài an táng cao cấp làm từ gỗ cẩm lai tự nhiên, chạm khắc hoa văn tinh xảo.",
+  "category": "Quan tài an táng",
+  "status": "active",
+  "isFeatured": true,
+  "created_at": {
+    "$date": "2025-07-14T09:35:35.379Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-14T09:38:01.401Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "688202e408af0b03b9491670"
+  },
+  "name": "Quan tài Hỏa Táng Gỗ Thông",
+  "slug": "quan-tai-hoa-tang-go-thong",
+  "price": 100,
+  "quantity": 100,
+  "image": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485787/products/tvtqiqbcgjtypojfhten.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485788/products/snleajrytuqvttpepvcp.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485787/products/h6xc5dpknfnooshrjw2c.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1752485789/products/us7huqoxkrvkodwdigfq.png"
+  ],
+  "description": "Quan tài hỏa táng nhẹ, gọn, làm từ gỗ thông thân thiện với môi trường.",
+  "category": "Quan tài hỏa táng",
+  "status": "active",
+  "isFeatured": true,
+  "created_at": {
+    "$date": "2025-07-14T09:35:35.379Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-14T09:38:01.401Z"
+  },
+  "__v": 1
+}]

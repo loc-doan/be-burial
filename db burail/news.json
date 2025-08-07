@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "688309c9fef4db9fa10e1130"
+  },
+  "title": "news test 1",
+  "slug": "news-test-1",
+  "category": "Hướng dẫn",
+  "summary": "news test 1",
+  "content": "news test 1",
+  "image": "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1753439294/products/wyalsutpr1l7anxyfqnu.png",
+  "created_at": {
+    "$date": "2025-07-25T04:36:25.638Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T10:28:16.051Z"
+  },
+  "__v": 0,
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "68835f940797e03eed796c8f"
+  },
+  "title": "news test 2",
+  "slug": "news-test-2",
+  "category": "Hướng dẫn",
+  "summary": "news test 2",
+  "content": "news test 2",
+  "image": "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1753440147/products/ccbpyiylohuajdlhu973.png",
+  "status": "active",
+  "created_at": {
+    "$date": "2025-07-25T10:42:28.870Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T10:43:04.965Z"
+  },
+  "__v": 0
+}]

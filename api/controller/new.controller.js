@@ -39,6 +39,7 @@ async function getNewsDetail(req, res, next) {
 async function addNews(req, res, next) {
   try {
     const { title, category, summary, content, tags, status } = req.body;
+    console.log(req.body);
     if (!title || !category || !summary || !content || !status) {
       return res.status(400).json({ message: "Thiếu thông tin bắt buộc" });
     }
@@ -68,7 +69,7 @@ async function addNews(req, res, next) {
       summary,
       content,
       image: imagePath,
-      status
+      status,
     });
     const ne = await news.save();
     return res.status(201).json({
@@ -119,22 +120,22 @@ async function editNews(req, res, next) {
   } catch (error) {
     next(error);
   }
-};
+}
 async function changeStatusNews(req, res, next) {
   try {
     const newsId = req.params.id;
     const newz = await News.findById(newsId);
     if (!newz) {
-      return res.status(404).json({ message: 'Tin tức không tồn tại' });
+      return res.status(404).json({ message: "Tin tức không tồn tại" });
     }
     let status = "active";
-    if(newz.status === "active"){
+    if (newz.status === "active") {
       status = "inactive";
     }
     newz.status = status;
     await newz.save();
     return res.status(200).json({
-      message: 'Thay đổi trạng thái thành công'
+      message: "Thay đổi trạng thái thành công",
     });
   } catch (error) {
     next(error);
@@ -144,5 +145,6 @@ module.exports = {
   getAllNews,
   addNews,
   getNewsDetail,
-  editNews,changeStatusNews
+  editNews,
+  changeStatusNews,
 };

@@ -1,0 +1,106 @@
+[{
+  "_id": {
+    "$oid": "6874a4dba85afa9ac6142519"
+  },
+  "title": "Gói An Táng Phật Giáo Truyền Thống",
+  "category": "Phật giáo",
+  "description": "Gói dịch vụ an táng theo nghi thức Phật giáo truyền thống, bao gồm tụng kinh, lễ cầu siêu, và trang trí không gian thanh tịnh theo phong cách thiền.",
+  "imageUrl": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1753364200/products/xrgxi2wm0ch1aonv2u99.png"
+  ],
+  "price": 14500,
+  "slug": "an-tang-phat-giao",
+  "inclusions": [
+    {
+      "$oid": "6874a38fa85afa9ac6142512"
+    },
+    {
+      "$oid": "6874a38fa85afa9ac6142513"
+    },
+    {
+      "$oid": "6874a588a85afa9ac6142524"
+    }
+  ],
+  "isFeatured": false,
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "title": "Gói An Táng Công Giáo Nghi Lễ Trang Nghiêm",
+  "category": "Công giáo",
+  "description": "Dịch vụ an táng theo nghi thức Công giáo với lễ nghi tại nhà thờ, linh mục chủ sự, và ban thánh nhạc phụng vụ.",
+  "imageUrl": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1753364200/products/xrgxi2wm0ch1aonv2u99.png"
+  ],
+  "price": 15800,
+  "slug": "an-tang-cong-giao",
+  "inclusions": [
+    {
+      "$oid": "6874a38fa85afa9ac6142512"
+    },
+    {
+      "$oid": "6874a38fa85afa9ac6142513"
+    },
+    {
+      "$oid": "6874a588a85afa9ac6142524"
+    }
+  ],
+  "isFeatured": false,
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "6874a4dba85afa9ac614251b"
+  },
+  "title": "Gói An Táng Hồi Giáo Theo Shariah",
+  "category": "Hồi giáo",
+  "description": "Gói dịch vụ an táng theo nghi thức Hồi giáo: tắm rửa thi hài (Ghusl), bọc vải (Kafan), cầu nguyện Janazah và chôn cất theo đúng giáo luật Shariah.",
+  "imageUrl": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1753364200/products/xrgxi2wm0ch1aonv2u99.png"
+  ],
+  "price": 13200,
+  "slug": "an-tang-hoi-giao",
+  "inclusions": [
+    {
+      "$oid": "6874a38fa85afa9ac6142512"
+    },
+    {
+      "$oid": "6874a38fa85afa9ac6142513"
+    },
+    {
+      "$oid": "6874a588a85afa9ac6142524"
+    }
+  ],
+  "isFeatured": false,
+  "status": "active"
+},
+{
+  "_id": {
+    "$oid": "6882342cb3cbbc5e2899994a"
+  },
+  "title": "Gói An Táng Hồi Giáo Nghi Lễ",
+  "category": "Hồi giáo",
+  "description": "Dịch vụ an táng theo nghi thức Hồi giáo với lễ nghi tại nhà thờ, linh mục chủ sự, và ban thánh nhạc phụng vụ.",
+  "imageUrl": [
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1753364200/products/xrgxi2wm0ch1aonv2u99.png",
+    "https://res.cloudinary.com/dp3vwy4cn/image/upload/v1753364200/products/moewyn4qlqnhs58prv5o.png"
+  ],
+  "price": 15800,
+  "slug": "goi-an-tang-hoi-giao-nghi-le",
+  "inclusions": [
+    {
+      "$oid": "6874a38fa85afa9ac6142512"
+    }
+  ],
+  "isFeatured": true,
+  "status": "active",
+  "created_at": {
+    "$date": "2025-07-24T13:25:00.605Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-24T14:02:56.250Z"
+  },
+  "__v": 2
+}]

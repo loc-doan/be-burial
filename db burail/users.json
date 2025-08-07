@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "685112013d8c1600ccc9a239"
+  },
+  "created_at": {
+    "$date": "2025-06-11T02:02:03.587Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-14T09:46:51.215Z"
+  },
+  "email": "aclieu2304@gmail.com",
+  "password": "$2b$10$NTFvm9Luh4hgkGeaocqaquz3hqj88bf1k3dR9HKycMxMdQx/PFmKu",
+  "role": "admin",
+  "otp": null,
+  "otpExpiresAt": null
+}]

@@ -9,12 +9,7 @@ router.get(
   authorizePosition("admin"),
   orderController.getOrderStats
 );
-router.post(
-  "/checkout",
-  authenticate,
-  authorizePosition("admin"),
-  orderController.checkout
-);
+router.post("/checkout", orderController.checkout);
 router.get(
   "/",
   authenticate,

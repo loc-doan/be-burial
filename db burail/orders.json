@@ -1,0 +1,262 @@
+[{
+  "_id": {
+    "$oid": "6874ac99a85afa9ac6142555"
+  },
+  "firstName": "Nguyễn",
+  "lastName": "Văn An",
+  "address": "123 Đường Nguyễn Trãi",
+  "city": "Quận 5",
+  "province": "TP. Hồ Chí Minh",
+  "phone": "0909123456",
+  "email": "an.nguyen@example.com",
+  "note": "Vui lòng giao hàng vào buổi sáng và liên hệ trước khi đến.",
+  "status": "Deny",
+  "productId": [
+    {
+      "$oid": "6874a38fa85afa9ac6142512"
+    },
+    {
+      "$oid": "6874a38fa85afa9ac6142513"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6882f325761a16e239557db0"
+  },
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "jane.doe@example.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [
+    {
+      "$oid": "6874a38fa85afa9ac6142512"
+    },
+    {
+      "$oid": "6874a38fa85afa9ac6142513"
+    }
+  ],
+  "status": "Waiting",
+  "created_at": {
+    "$date": "2025-07-25T02:59:49.716Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T02:59:49.716Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688300661b6d860e5b69233f"
+  },
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "aclieu2304@gmail.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [
+    {
+      "$oid": "6874a38fa85afa9ac6142512"
+    },
+    {
+      "$oid": "6874a38fa85afa9ac6142513"
+    }
+  ],
+  "status": "Accept",
+  "created_at": {
+    "$date": "2025-07-25T03:56:22.417Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T04:10:01.838Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68836182826a1b0809d41311"
+  },
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "jane.doe@example.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [],
+  "serviceId": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "date": "26/8/2025",
+  "status": "Waiting",
+  "created_at": {
+    "$date": "2025-07-25T10:50:42.965Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T10:50:42.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68836210996007a385f4fa9f"
+  },
+  "firstName": "Jane2",
+  "lastName": "Do2e",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "sss@gmail.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [],
+  "serviceId": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "date": "26/8/2025",
+  "status": "Accept",
+  "created_at": {
+    "$date": "2025-07-25T10:53:04.784Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T10:56:10.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6883649c015164cabb78213c"
+  },
+  "firstName": "Jane2",
+  "lastName": "Do2e",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "doanphucloc23@gmail.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [],
+  "serviceId": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "date": "26/8/2025",
+  "status": "Waiting",
+  "created_at": {
+    "$date": "2025-07-25T11:03:56.426Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T11:03:56.426Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688364ad4d41227c03d4d64b"
+  },
+  "firstName": "Jane2",
+  "lastName": "Do2e",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "doanphucloc23@gmail.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [],
+  "serviceId": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "date": "26/8/2025",
+  "status": "Waiting",
+  "created_at": {
+    "$date": "2025-07-25T11:04:13.205Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T11:04:13.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688365144d41227c03d4d64e"
+  },
+  "firstName": "Jane2",
+  "lastName": "Do2e",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "doanphucloc23@gmail.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [],
+  "serviceId": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "date": "26/8/2025",
+  "status": "Waiting",
+  "created_at": {
+    "$date": "2025-07-25T11:05:56.305Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T11:05:56.305Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688365174d41227c03d4d651"
+  },
+  "firstName": "Jane2",
+  "lastName": "Do2e",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "doanphucloc23@gmail.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [],
+  "serviceId": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "date": "26/8/2025",
+  "status": "Waiting",
+  "created_at": {
+    "$date": "2025-07-25T11:05:59.610Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T11:05:59.610Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "688365387f8d8f638e9d9cd1"
+  },
+  "firstName": "Jane2",
+  "lastName": "Do2e",
+  "address": "123 Maple Street",
+  "city": "Toronto",
+  "province": "Ontario",
+  "phone": "123-456-7890",
+  "email": "doanphucloc23@gmail.com",
+  "note": "Customer prefers weekend service.",
+  "productId": [],
+  "serviceId": {
+    "$oid": "6874a4dba85afa9ac614251a"
+  },
+  "date": "26/8/2025",
+  "status": "Waiting",
+  "created_at": {
+    "$date": "2025-07-25T11:06:32.668Z"
+  },
+  "updated_at": {
+    "$date": "2025-07-25T11:06:32.668Z"
+  },
+  "__v": 0
+}]

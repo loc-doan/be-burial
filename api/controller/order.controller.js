@@ -49,8 +49,9 @@ async function checkout(req, res, next) {
       note,
       productId,
       serviceId,
-      date
+      date,
     } = req.body;
+    console.log(req.body);
     if (
       !firstName ||
       !lastName ||
@@ -79,7 +80,7 @@ async function checkout(req, res, next) {
     if (Array.isArray(productId) && productId.length > 0) {
       orderData.productId = productId;
     }
-    if(date !== null){
+    if (date !== null) {
       orderData.date = date;
     }
     const newOrder = new Order(orderData);
@@ -198,16 +199,24 @@ async function checkout(req, res, next) {
         </html>
       `,
     };
-    if(serviceId !== null){
+    if (serviceId !== null) {
       const user = req.user;
-      console.log(user)
+      let toMail;
+      let cus;
+      if (!user) {
+        cus = "Khách hàng";
+        toMail = email;
+      } else {
+        cust = user.role;
+        toMail = user.email;
+      }
       const mailOptions2 = {
         from: '"Thiên An Lạc"',
-        to: user.email,
+        to: toMail,
         subject: "Thông báo ngày giờ khách hàng đặt dịch vụ",
         text: `
-    Kính gửi ${user.role},
-    
+    Kính gửi ${cus},
+
     Trân trọng,
     Hệ thống HRM
     `,
@@ -230,7 +239,7 @@ async function checkout(req, res, next) {
               <!-- Body -->
               <tr>
                 <td style="padding: 20px;">
-                  <p style="color: #333333; font-size: 14px; margin: 0 0 10px;">Kính gửi ${user.role}</p>
+                  <p style="color: #333333; font-size: 14px; margin: 0 0 10px;">Kính gửi ${cus}</p>
                   <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background-color: #f9f9f9;">
                     <tr>
                       <td style="font-size: 14px; color: #333333; border-bottom: 1px solid #e0e0e0;"><strong>Địa chỉ:</strong></td>
