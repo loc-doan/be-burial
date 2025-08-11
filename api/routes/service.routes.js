@@ -18,11 +18,11 @@ router.put(
   serviceController.editService
 );
 router.patch(
-    "/changeStatus/:id",
-    authenticate,
-    authorizePosition("admin"),
-    serviceController.changeStatus
-  );
+  "/changeStatus/:id",
+  authenticate,
+  authorizePosition("admin"),
+  serviceController.changeStatus
+);
 router.get("/", serviceController.getAllService);
 router.get("/:id", serviceController.getOneService);
 module.exports = router;

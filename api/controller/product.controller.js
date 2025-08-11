@@ -4,7 +4,6 @@ async function addProduct(req, res, next) {
   try {
     const { name, quantity, price, description, category, status, isFeatured } =
       req.body;
-    console.log(req.body);
     if (!name || !price || !category || !quantity || !status) {
       return res.status(400).json({ message: "Thiếu thông tin bắt buộc" });
     }
@@ -46,6 +45,7 @@ async function addProduct(req, res, next) {
       data: product,
     });
   } catch (error) {
+    console.log(error);
     next(error);
   }
 }
