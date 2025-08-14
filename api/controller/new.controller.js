@@ -5,7 +5,7 @@ async function getAllNews(req, res, next) {
     const { page = 1 } = req.query;
     const limit = 9;
     const skip = (page - 1) * limit;
-    const filter = { status: "active" };
+    const filter = {};
     const total = await News.countDocuments(filter);
     const allNew = await News.find(filter).skip(skip).limit(limit);
     return res.status(200).json({
@@ -38,21 +38,24 @@ async function getNewsDetail(req, res, next) {
 }
 async function addNews(req, res, next) {
   try {
-    const { title, category, summary, content, tags, status } = req.body;
-    console.log(req.body);
-    if (!title || !category || !summary || !content || !status) {
+    let { title, category, summary, content, slug, status } = req.body;
+
+    if (!title || !category || !summary || !content) {
       return res.status(400).json({ message: "Thiếu thông tin bắt buộc" });
     }
     if (!req.file) {
+      console.log(req.body);
       return res
         .status(400)
         .json({ message: "Vui lòng tải lên 1 ảnh đại diện" });
     }
-    const slug = slugify(title, {
-      lower: true,
-      strict: true,
-      locale: "vi",
-    });
+    if (!slug) {
+      slug = slugify(title, {
+        lower: true,
+        strict: true,
+        locale: "vi",
+      });
+    }
     const existingTitle = await News.findOne({ title });
     if (existingTitle) {
       return res.status(400).json({ message: "Bài viết đã tồn tại." });
