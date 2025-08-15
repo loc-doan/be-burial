@@ -200,6 +200,7 @@ async function checkout(req, res, next) {
         </html>
       `,
     };
+    let mailOptions2;
     if (serviceId !== null) {
       const user = req.user;
       let toMail;
@@ -211,7 +212,7 @@ async function checkout(req, res, next) {
         cust = user.role;
         toMail = user.email;
       }
-      const mailOptions2 = {
+       mailOptions2 = {
         from: '"Thiên An Lạc"',
         to: toMail,
         subject: "Thông báo ngày giờ khách hàng đặt dịch vụ",
@@ -273,23 +274,23 @@ async function checkout(req, res, next) {
           </html>
         `,
       };
-      if (date === null) {
-        transporter.sendMail(mailOptions2, (error, info) => {
-          if (error) {
-            return console.log("Lỗi khi gửi email:", error);
-          }
-          console.log("Email đã được gửi:", info.response);
-        });
-      }
     }
-    if (date !== null) {
+    if (!date || date.trim() === "") {
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           return console.log("Lỗi khi gửi email:", error);
         }
-        console.log("Email đã được gửi:", info.response);
+        console.log("Email mailOptions đã được gửi:", info.response);
+      });
+    } else {
+      transporter.sendMail(mailOptions2, (error, info) => {
+        if (error) {
+          return console.log("Lỗi khi gửi email:", error);
+        }
+        console.log("Email mailOptions2 đã được gửi:", info.response);
       });
     }
+
     return res.status(200).json({
       message: "Đặt hàng thành công",
       newO,
