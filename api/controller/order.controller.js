@@ -24,7 +24,8 @@ async function getOrderStats(req, res, next) {
     }
     const totalOrders = orders.length;
     const totalCustomers = customerEmails.size;
-    const averageOrderValue = totalOrders > 0 ? totalRevenue / totalOrders : 0;
+    const averageOrderValue =
+      totalOrders > 0 ? Math.floor(totalRevenue / totalOrders) : 0;
     return res.status(200).json({
       totalRevenue,
       totalOrders,
@@ -190,7 +191,7 @@ async function checkout(req, res, next) {
                   </tr>
                   ${serviceRowHTML}
                   ${productRowHTML}
-                  ${dateRowHTML}
+               
                 </table>
               </td>
             </tr>
@@ -272,19 +273,23 @@ async function checkout(req, res, next) {
           </html>
         `,
       };
-      transporter.sendMail(mailOptions2, (error, info) => {
+      if (date === null) {
+        transporter.sendMail(mailOptions2, (error, info) => {
+          if (error) {
+            return console.log("Lỗi khi gửi email:", error);
+          }
+          console.log("Email đã được gửi:", info.response);
+        });
+      }
+    }
+    if (date !== null) {
+      transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           return console.log("Lỗi khi gửi email:", error);
         }
         console.log("Email đã được gửi:", info.response);
       });
     }
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return console.log("Lỗi khi gửi email:", error);
-      }
-      console.log("Email đã được gửi:", info.response);
-    });
     return res.status(200).json({
       message: "Đặt hàng thành công",
       newO,
