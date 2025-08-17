@@ -11,12 +11,7 @@ router.get(
 );
 router.post("/checkout", orderController.checkout);
 router.get("/", authenticate, orderController.getAllOrder);
-router.get(
-  "/:id",
-  authenticate,
-  authorizePosition("admin"),
-  orderController.getOrderDetail
-);
+router.get("/:id", orderController.getOrderDetail);
 router.patch(
   "/changeStatus/:id",
   authenticate,
