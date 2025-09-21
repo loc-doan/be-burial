@@ -1,10 +1,13 @@
-
 const cors = require('cors');
 
-const allowedOrigins = ['http://localhost:3000', 'https://beacon-burial-drab.vercel.app/'];
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://beacon-burial-drab.vercel.app'
+];
 
 const corsOptions = {
   origin: function (origin, callback) {
+    console.log('CORS request from:', origin); 
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -16,4 +19,4 @@ const corsOptions = {
   credentials: true
 };
 
-module.exports = cors(corsOptions);
+module.exports = corsOptions; 
